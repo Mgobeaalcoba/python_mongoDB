@@ -14,8 +14,16 @@ def main():
     guardar_usuario(db, nuevo_usuario)
 
 
-def conectar_db():
-    cliente = pymongo.MongoClient("mongodb+srv://gobeamariano:pAsA07eDEPrDjM7Q@cluster0.gggakxv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+def conectar_db(context="local"):
+    if context == "local":
+        load_dotenv()
+        username = os.getenv("MONGO_USERNAME")
+        password = os.getenv("MONGO_PASSWORD")
+    else:
+        username = os.getenv("MONGO_USERNAME")
+        password = os.getenv("MONGO_PASSWORD")
+        
+    cliente = pymongo.MongoClient(f"mongodb+srv://{username}:{password}@cluster0.gggakxv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
     db = cliente["ProjectTest"] # Nombre de la base de datos
     return db
 
