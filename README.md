@@ -1,0 +1,1 @@
+# Proyecto de prueba para conectar y registrar objetos en una base de datos no relacional con Python
