@@ -1,5 +1,7 @@
 import pymongo
 from model.usuario import Usuario
+import os
+from dotenv import load_dotenv
 
 
 def main():
