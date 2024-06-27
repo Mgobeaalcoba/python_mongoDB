@@ -1,5 +1,7 @@
 # Proyecto de Prueba: Conexión de Python con MongoDB
 
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FMgobeaalcoba%2Fpython_mongoDB&label=Visitors&countColor=%23263759)
+
 Este proyecto es una demostración de cómo conectar una aplicación Python a una base de datos MongoDB utilizando MongoDB Atlas y el paquete `pymongo`.
 
 ## Requisitos Previos
